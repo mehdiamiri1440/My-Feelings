@@ -3,11 +3,7 @@ import { View, Text } from "react-native";
 class Landing extends Component {
   state = {};
   render() {
-    return (
-      <View>
-        <Text>landing</Text>
-      </View>
-    );
+    return <React.Fragment />;
   }
 }
 export default Landing;

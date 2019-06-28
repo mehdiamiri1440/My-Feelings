@@ -1,8 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import AppNavigator from "./routes";
-class Routes extends Component {
-  render() {
-    return <AppNavigator />;
-  }
-}
+const Routes=()=> <AppNavigator />;
 export default Routes;
