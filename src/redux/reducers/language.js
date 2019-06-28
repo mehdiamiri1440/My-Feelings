@@ -7,8 +7,8 @@ export default (languageReducer = (state = intialState, actions) => {
     case languageTypes.SET_LOCALE:
       return {
         ...state,
-        language: languages[action.language],
-        messages: messages[action.language]
+        language: languages[actions.lang],
+        messages: messages[actions.lang]
       };
     default:
       return state;
