@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
+import { Provider } from "react-redux";
+import Languages from "./src/languages";
+import store from "./src/redux/store";
 class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-      </View>
+      <Provider store={store}>
+        <Languages />
+      </Provider>
     );
   }
 }
