@@ -4,13 +4,13 @@ import Landing from "../components/screens/Landing/landing";
 const AppNavigator = createStackNavigator(
   {
     Home: {
-      screen: Home
+      screen: Home,
+      navigationOptions: ({ navigation }) => ({
+        title: "Home"
+      })
     },
-    Landing: {
-      screen: Landing,
-      navigationOptions: { header: null, tabBarVisible: false }
-    }
+    Landing: { screen: Landing }
   },
-  { initialRouteName: "Landing" }
+  { initialRouteName: "Home" }
 );
 export default createAppContainer(AppNavigator);
